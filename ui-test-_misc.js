@@ -22,6 +22,10 @@ describe('OLSKGazette_Misc', function () {
 		browser.assert.attribute(OLSKGazette, 'novalidate', '');
 	});
 
+	it('classes OLSKDecorBigForm', function () {
+		browser.assert.hasClass(OLSKGazette, 'OLSKDecorBigForm');
+	});
+
 	describe('OLSKGazetteAddressField', function test_OLSKGazetteAddressField () {
 
 		it('sets type', function () {
