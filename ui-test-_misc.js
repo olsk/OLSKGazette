@@ -29,7 +29,7 @@ describe('OLSKGazette_Misc', function () {
 	describe('OLSKGazetteAddressField', function test_OLSKGazetteAddressField () {
 
 		it('sets type', function () {
-			browser.assert.attribute(OLSKGazetteAddressField, 'type', 'email');
+			browser.assert.attribute(OLSKGazetteAddressField, 'type', 'text');
 		});
 
 		it('sets name', function () {
