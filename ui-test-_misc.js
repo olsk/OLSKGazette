@@ -44,6 +44,10 @@ describe('OLSKGazette_Misc', function () {
 			browser.assert.attribute(OLSKGazetteSubmitButton, 'type', 'submit');
 		});
 
+		it('classes OLSKDecorPressCall', function () {
+			browser.assert.hasClass(OLSKGazetteSubmitButton, 'OLSKDecorPressCall');
+		});
+
 	});
 
 });
