@@ -1,0 +1,14 @@
+{
+  "name": "OLSKGazette",
+  "main": "main.ejs",
+  "scripts": {
+    "start": "olsk-express .",
+    "test": "olsk-spec-ui"
+  },
+  "devDependencies": {
+    "OLSKExpress": "olsk/OLSKExpress",
+    "OLSKSpec": "olsk/OLSKSpec",
+    "normalize.css": "latest",
+    "OLSKDecor": "olsk/OLSKDecor"
+  }
+}
