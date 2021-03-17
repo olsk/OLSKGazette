@@ -6,7 +6,9 @@ const mod = {
 			OLSKRouteMethod: 'get',
 			OLSKRouteSignature: 'OLSKGazetteStubRoute',
 			OLSKRouteFunction (req, res, next) {
-				return res.OLSKExpressLayoutRender(require('path').join(__dirname, 'stub-view'));
+				return res.OLSKExpressLayoutRender(require('path').join(__dirname, 'stub-view'), Object.fromEntries(Array.from((new URLSearchParams(req.query)).entries()).filter(function ([key, value]) {
+					return value !== 'undefined';
+				})));
 			},
 			OLSKRouteLanguageCodes: ['en', 'fr', 'es', 'pt'],
 		}];

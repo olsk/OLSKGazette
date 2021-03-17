@@ -2,8 +2,12 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 describe('OLSKGazette_Misc', function () {
 
+	const OLSKGazetteProject = uRandomElement(undefined, Math.random().toString());
+
 	before(function() {
-		return browser.OLSKVisit(kDefaultRoute);
+		return browser.OLSKVisit(kDefaultRoute, {
+			OLSKGazetteProject,
+		});
 	});
 
 	it('sets method', function () {
@@ -38,6 +42,22 @@ describe('OLSKGazette_Misc', function () {
 
 		it('sets placeholder', function () {
 			browser.assert.attribute(OLSKGazetteAddressField, 'placeholder', 'you@example.com');
+		});
+		
+	});
+
+	describe('OLSKGazetteProjectField', function test_OLSKGazetteProjectField () {
+
+		it('sets type', function () {
+			browser.assert.attribute(OLSKGazetteProjectField, 'type', 'hidden');
+		});
+
+		it('sets name', function () {
+			browser.assert.attribute(OLSKGazetteProjectField, 'name', 'MERGE1');
+		});
+
+		it('sets value', function () {
+			browser.assert.attribute(OLSKGazetteProjectField, 'value', OLSKGazetteProject || 'RP_X');
 		});
 		
 	});

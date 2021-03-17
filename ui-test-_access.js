@@ -5,6 +5,8 @@ Object.entries({
 
 	OLSKGazetteAddressField: '.OLSKGazetteAddressField',
 
+	OLSKGazetteProjectField: '.OLSKGazetteProjectField',
+
 	OLSKGazetteSubmitButton: '.OLSKGazetteSubmitButton',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
@@ -22,6 +24,10 @@ describe('OLSKGazette_Access', function () {
 
 	it('shows OLSKGazetteAddressField', function () {
 		browser.assert.elements(OLSKGazetteAddressField, 1);
+	});
+
+	it('shows OLSKGazetteProjectField', function () {
+		browser.assert.elements(OLSKGazetteProjectField, 1);
 	});
 
 	it('shows OLSKGazetteSubmitButton', function () {
