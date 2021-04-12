@@ -6,8 +6,7 @@
     "test": "olsk-spec-ui"
   },
   "devDependencies": {
-    "OLSKExpress": "olsk/OLSKExpress",
-    "OLSKSpec": "olsk/OLSKSpec",
+    "OLSKPithToolchain": "olsk/OLSKPithToolchain",
     "normalize.css": "latest",
     "OLSKDecor": "olsk/OLSKDecor"
   }
