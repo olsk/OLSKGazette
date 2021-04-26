@@ -1,13 +1,11 @@
-<form class="OLSKGazette OLSKDecorBigForm" method="post" action="https://rosano.us11.list-manage.com/subscribe/post?u=7961db5bac34616b1bbf06ada&amp;id=e58e9bd9be" target="_blank" novalidate>
+<form class="OLSKGazette OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
 
 	<p>
-		<input class="OLSKGazetteAddressField" type="text" name="EMAIL" placeholder="you@example.com"/>
+		<input class="OLSKGazetteAddressField" type="email" name="email" placeholder="you@example.com" />
 	</p>
 
-	<div style="position: absolute; left: -5000px;" aria-hidden="true">
-		<input class="OLSKGazetteProjectField" type="hidden" name="MERGE1" value="<%= locals.OLSKGazetteProject || 'RP_X' %>"/>
-		<input type="text" name="b_7961db5bac34616b1bbf06ada_e58e9bd9be" tabindex="-1" value="">
-	</div>
+	<input class="OLSKGazetteProjectField" type="hidden" name="metadata__project" value="<%= locals.OLSKGazetteProject || 'RP_X' %>"/>
+	<input type="hidden" value="1" name="embed" />
 
 	<p>
 		<input class="OLSKGazetteSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('OLSKGazetteSubmitButtonText') %>" />

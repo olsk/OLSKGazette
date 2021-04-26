@@ -15,15 +15,11 @@ describe('OLSKGazette_Misc', function () {
 	});
 
 	it('sets action', function () {
-		browser.assert.attribute(OLSKGazette, 'action', 'https://rosano.us11.list-manage.com/subscribe/post?u=7961db5bac34616b1bbf06ada&id=e58e9bd9be');
+		browser.assert.attribute(OLSKGazette, 'action', 'https://buttondown.email/api/emails/embed-subscribe/rosano');
 	});
 
 	it('sets target', function () {
 		browser.assert.attribute(OLSKGazette, 'target', '_blank');
-	});
-
-	it('sets novalidate', function () {
-		browser.assert.attribute(OLSKGazette, 'novalidate', '');
 	});
 
 	it('classes OLSKDecorBigForm', function () {
@@ -33,11 +29,11 @@ describe('OLSKGazette_Misc', function () {
 	describe('OLSKGazetteAddressField', function test_OLSKGazetteAddressField () {
 
 		it('sets type', function () {
-			browser.assert.attribute(OLSKGazetteAddressField, 'type', 'text');
+			browser.assert.attribute(OLSKGazetteAddressField, 'type', 'email');
 		});
 
 		it('sets name', function () {
-			browser.assert.attribute(OLSKGazetteAddressField, 'name', 'EMAIL');
+			browser.assert.attribute(OLSKGazetteAddressField, 'name', 'email');
 		});
 
 		it('sets placeholder', function () {
@@ -53,7 +49,7 @@ describe('OLSKGazette_Misc', function () {
 		});
 
 		it('sets name', function () {
-			browser.assert.attribute(OLSKGazetteProjectField, 'name', 'MERGE1');
+			browser.assert.attribute(OLSKGazetteProjectField, 'name', 'metadata__project');
 		});
 
 		it('sets value', function () {
