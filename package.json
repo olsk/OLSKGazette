@@ -1,12 +1,7 @@
 {
   "name": "OLSKGazette",
   "main": "main.ejs",
-  "scripts": {
-    "start": "olsk-express .",
-    "test": "olsk-spec-ui"
-  },
   "devDependencies": {
-    "OLSKPithToolchain": "olsk/OLSKPithToolchain",
     "normalize.css": "latest",
     "OLSKDecor": "olsk/OLSKDecor"
   }
