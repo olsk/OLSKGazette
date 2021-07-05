@@ -1,37 +1,37 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 Object.entries({
-	OLSKGazette: '.OLSKGazette',
+	ROCOBulletin: '.ROCOBulletin',
 
-	OLSKGazetteAddressField: '.OLSKGazetteAddressField',
+	ROCOBulletinAddressField: '.ROCOBulletinAddressField',
 
-	OLSKGazetteProjectField: '.OLSKGazetteProjectField',
+	ROCOBulletinProjectField: '.ROCOBulletinProjectField',
 
-	OLSKGazetteSubmitButton: '.OLSKGazetteSubmitButton',
+	ROCOBulletinSubmitButton: '.ROCOBulletinSubmitButton',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
 
-describe('OLSKGazette_Access', function () {
+describe('ROCOBulletin_Access', function () {
 
 	before(function() {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 
-	it('shows OLSKGazette', function () {
-		browser.assert.elements(OLSKGazette, 1);
+	it('shows ROCOBulletin', function () {
+		browser.assert.elements(ROCOBulletin, 1);
 	});
 
-	it('shows OLSKGazetteAddressField', function () {
-		browser.assert.elements(OLSKGazetteAddressField, 1);
+	it('shows ROCOBulletinAddressField', function () {
+		browser.assert.elements(ROCOBulletinAddressField, 1);
 	});
 
-	it('shows OLSKGazetteProjectField', function () {
-		browser.assert.elements(OLSKGazetteProjectField, 1);
+	it('shows ROCOBulletinProjectField', function () {
+		browser.assert.elements(ROCOBulletinProjectField, 1);
 	});
 
-	it('shows OLSKGazetteSubmitButton', function () {
-		browser.assert.elements(OLSKGazetteSubmitButton, 1);
+	it('shows ROCOBulletinSubmitButton', function () {
+		browser.assert.elements(ROCOBulletinSubmitButton, 1);
 	});
 
 });

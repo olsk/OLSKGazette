@@ -1,5 +1,5 @@
 {
-  "name": "OLSKGazette",
+  "name": "ROCOBulletin",
   "main": "main.ejs",
   "devDependencies": {
     "normalize.css": "latest",

@@ -1,71 +1,71 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
-describe('OLSKGazette_Misc', function () {
+describe('ROCOBulletin_Misc', function () {
 
-	const OLSKGazetteProject = uRandomElement(undefined, Math.random().toString());
+	const ROCOBulletinProject = uRandomElement(undefined, Math.random().toString());
 
 	before(function() {
 		return browser.OLSKVisit(kDefaultRoute, {
-			OLSKGazetteProject,
+			ROCOBulletinProject,
 		});
 	});
 
 	it('sets method', function () {
-		browser.assert.attribute(OLSKGazette, 'method', 'post');
+		browser.assert.attribute(ROCOBulletin, 'method', 'post');
 	});
 
 	it('sets action', function () {
-		browser.assert.attribute(OLSKGazette, 'action', 'https://buttondown.email/api/emails/embed-subscribe/rosano');
+		browser.assert.attribute(ROCOBulletin, 'action', 'https://buttondown.email/api/emails/embed-subscribe/rosano');
 	});
 
 	it('sets target', function () {
-		browser.assert.attribute(OLSKGazette, 'target', '_blank');
+		browser.assert.attribute(ROCOBulletin, 'target', '_blank');
 	});
 
 	it('classes OLSKDecorBigForm', function () {
-		browser.assert.hasClass(OLSKGazette, 'OLSKDecorBigForm');
+		browser.assert.hasClass(ROCOBulletin, 'OLSKDecorBigForm');
 	});
 
-	describe('OLSKGazetteAddressField', function test_OLSKGazetteAddressField () {
+	describe('ROCOBulletinAddressField', function test_ROCOBulletinAddressField () {
 
 		it('sets type', function () {
-			browser.assert.attribute(OLSKGazetteAddressField, 'type', 'email');
+			browser.assert.attribute(ROCOBulletinAddressField, 'type', 'email');
 		});
 
 		it('sets name', function () {
-			browser.assert.attribute(OLSKGazetteAddressField, 'name', 'email');
+			browser.assert.attribute(ROCOBulletinAddressField, 'name', 'email');
 		});
 
 		it('sets placeholder', function () {
-			browser.assert.attribute(OLSKGazetteAddressField, 'placeholder', 'you@example.com');
+			browser.assert.attribute(ROCOBulletinAddressField, 'placeholder', 'you@example.com');
 		});
 		
 	});
 
-	describe('OLSKGazetteProjectField', function test_OLSKGazetteProjectField () {
+	describe('ROCOBulletinProjectField', function test_ROCOBulletinProjectField () {
 
 		it('sets type', function () {
-			browser.assert.attribute(OLSKGazetteProjectField, 'type', 'hidden');
+			browser.assert.attribute(ROCOBulletinProjectField, 'type', 'hidden');
 		});
 
 		it('sets name', function () {
-			browser.assert.attribute(OLSKGazetteProjectField, 'name', 'metadata__project');
+			browser.assert.attribute(ROCOBulletinProjectField, 'name', 'metadata__project');
 		});
 
 		it('sets value', function () {
-			browser.assert.attribute(OLSKGazetteProjectField, 'value', OLSKGazetteProject || 'RP_X');
+			browser.assert.attribute(ROCOBulletinProjectField, 'value', ROCOBulletinProject || 'RP_X');
 		});
 		
 	});
 
-	describe('OLSKGazetteSubmitButton', function test_OLSKGazetteSubmitButton () {
+	describe('ROCOBulletinSubmitButton', function test_ROCOBulletinSubmitButton () {
 
 		it('sets type', function () {
-			browser.assert.attribute(OLSKGazetteSubmitButton, 'type', 'submit');
+			browser.assert.attribute(ROCOBulletinSubmitButton, 'type', 'submit');
 		});
 
 		it('classes OLSKDecorPressCall', function () {
-			browser.assert.hasClass(OLSKGazetteSubmitButton, 'OLSKDecorPressCall');
+			browser.assert.hasClass(ROCOBulletinSubmitButton, 'OLSKDecorPressCall');
 		});
 
 	});

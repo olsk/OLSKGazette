@@ -6,7 +6,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		return OLSKTestingLocalized(inputData, OLSKRoutingLanguage);
 	};
 
-	describe('OLSKGazette_Localize-' + OLSKRoutingLanguage, function () {
+	describe('ROCOBulletin_Localize-' + OLSKRoutingLanguage, function () {
 
 		before(function() {
 			return browser.OLSKVisit(kDefaultRoute, {
@@ -14,12 +14,12 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
-		it('localizes OLSKGazetteHeading', function() {
-			browser.assert.text('#TestHeading', uLocalized('OLSKGazetteHeadingText'));
+		it('localizes ROCOBulletinHeading', function() {
+			browser.assert.text('#TestHeading', uLocalized('ROCOBulletinHeadingText'));
 		});
 	
-		it('localizes OLSKGazetteSubmitButton', function() {
-			browser.assert.attribute(OLSKGazetteSubmitButton, 'value', uLocalized('OLSKGazetteSubmitButtonText'));
+		it('localizes ROCOBulletinSubmitButton', function() {
+			browser.assert.attribute(ROCOBulletinSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
 		});
 
 	});
