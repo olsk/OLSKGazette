@@ -49,7 +49,7 @@ describe('ROCOBulletin_Misc', function () {
 		});
 
 		it('sets name', function () {
-			browser.assert.attribute(ROCOBulletinProjectField, 'name', 'metadata__project');
+			browser.assert.attribute(ROCOBulletinProjectField, 'name', 'tag');
 		});
 
 		it('sets value', function () {
