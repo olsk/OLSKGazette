@@ -1,6 +1,8 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 Object.entries({
+	ROCOBulletin2: '.ROCOBulletin2',
+
 	ROCOBulletin: '.ROCOBulletin',
 
 	ROCOBulletinAddressField: '.ROCOBulletinAddressField',
@@ -16,6 +18,10 @@ describe('ROCOBulletin_Access', function () {
 
 	before(function() {
 		return browser.OLSKVisit(kDefaultRoute);
+	});
+
+	it('shows ROCOBulletin2', function () {
+		browser.assert.elements(ROCOBulletin2, 1);
 	});
 
 	it('shows ROCOBulletin', function () {

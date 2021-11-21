@@ -14,6 +14,10 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
+		it('localizes ROCOBulletin2', function() {
+			browser.assert.text(ROCOBulletin2, uLocalized('ROCOBulletinSubmitButtonText'));
+		});
+
 		it('localizes ROCOBulletinSubmitButton', function() {
 			browser.assert.attribute(ROCOBulletinSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
 		});

@@ -1,4 +1,16 @@
-<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/ephemerata" target="_blank">
+<p><a class="ROCOBulletin2 OLSKDecorPress OLSKDecorPressCall OLSKDecorInput" href="https://rosano.ca/ephemerata"><%= OLSKLocalized('ROCOBulletinSubmitButtonText') %></a></p>
+
+<style>
+.ROCOBulletin2 {
+  padding: 5px !important;
+}
+
+.ROCOBulletin {
+  display: none;
+}
+</style>
+
+<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/ephemerata" target="_blank" aria-hidden="true">
 
 	<p>
 		<input class="ROCOBulletinAddressField" type="email" name="email" placeholder="you@example.com" />
