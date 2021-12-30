@@ -15,7 +15,7 @@ describe('ROCOBulletin_Misc', function () {
 	});
 
 	it('sets action', function () {
-		browser.assert.attribute(ROCOBulletin, 'action', 'https://buttondown.email/api/emails/embed-subscribe/ephemerata');
+		browser.assert.attribute(ROCOBulletin, 'action', 'https://buttondown.email/api/emails/embed-subscribe/rosano');
 	});
 
 	it('sets target', function () {
