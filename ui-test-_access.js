@@ -11,7 +11,7 @@ Object.entries({
 
 	ROCOBulletinSubmitButton: '.ROCOBulletinSubmitButton',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('ROCOBulletin_Access', function () {
