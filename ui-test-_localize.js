@@ -18,6 +18,14 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			browser.assert.text(ROCOBulletin2, uLocalized('ROCOBulletinSubmitButtonText'));
 		});
 
+		it('localizes ROCOBulletinScriptSubmitButton', function() {
+			browser.assert.attribute(ROCOBulletinScriptSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
+		});
+
+		it('localizes ROCOBulletinScriptFeedback', function() {
+			browser.assert.text(ROCOBulletinScriptFeedback, uLocalized('ROCOBulletinFeedbackText'));
+		});
+
 		it('localizes ROCOBulletinNoscriptSubmitButton', function() {
 			browser.assert.attribute(ROCOBulletinNoscriptSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
 		});

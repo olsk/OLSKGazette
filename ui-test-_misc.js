@@ -30,6 +30,66 @@ describe('ROCOBulletin_Misc', function () {
 		
 	});
 
+	describe('ROCOBulletinScript', function test_ROCOBulletinScript () {
+
+		it('sets data-members-form', function () {
+			browser.assert.attribute(ROCOBulletinScript, 'data-members-form', '');
+		});
+
+		it('classes OLSKDecorBigForm', function () {
+			browser.assert.hasClass(ROCOBulletinScript, 'OLSKDecorBigForm');
+		});
+		
+	});
+
+	describe('ROCOBulletinScriptAddressField', function test_ROCOBulletinScriptAddressField () {
+
+		it('sets type', function () {
+			browser.assert.attribute(ROCOBulletinScriptAddressField, 'type', 'email');
+		});
+
+		it('sets required', function () {
+			browser.assert.attribute(ROCOBulletinScriptAddressField, 'required', 'true');
+		});
+
+		it('sets placeholder', function () {
+			browser.assert.attribute(ROCOBulletinScriptAddressField, 'placeholder', 'you@example.com');
+		});
+
+		it('sets data-members-email', function () {
+			browser.assert.attribute(ROCOBulletinScriptAddressField, 'data-members-email', '');
+		});
+		
+	});
+
+	describe('ROCOBulletinScriptProjectField', function test_ROCOBulletinScriptProjectField () {
+
+		it('sets type', function () {
+			browser.assert.attribute(ROCOBulletinScriptProjectField, 'type', 'hidden');
+		});
+
+		it('sets data-members-label', function () {
+			browser.assert.attribute(ROCOBulletinScriptProjectField, 'data-members-label', '');
+		});
+
+		it('sets value', function () {
+			browser.assert.attribute(ROCOBulletinScriptProjectField, 'value', ROCOBulletinProject || 'RP_X');
+		});
+		
+	});
+
+	describe('ROCOBulletinScriptSubmitButton', function test_ROCOBulletinScriptSubmitButton () {
+
+		it('sets type', function () {
+			browser.assert.attribute(ROCOBulletinScriptSubmitButton, 'type', 'submit');
+		});
+
+		it('classes OLSKDecorPressCall', function () {
+			browser.assert.hasClass(ROCOBulletinScriptSubmitButton, 'OLSKDecorPressCall');
+		});
+
+	});
+
 	describe('ROCOBulletinNoscript', function test_ROCOBulletinNoscript () {
 
 		it('sets method', function () {

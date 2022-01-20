@@ -5,7 +5,13 @@ Object.entries({
 
 	ROCOBulletin2: '.ROCOBulletin2',
 
-	ROCOBulletinNoscript: '.ROCOBulletinNoscript',
+	ROCOBulletinScript: '.ROCOBulletinScript',
+	ROCOBulletinScriptAddressField: '.ROCOBulletinScriptAddressField',
+	ROCOBulletinScriptProjectField: '.ROCOBulletinScriptProjectField',
+	ROCOBulletinScriptSubmitButton: '.ROCOBulletinScriptSubmitButton',
+	ROCOBulletinScriptFeedback: '.ROCOBulletinScriptFeedback',
+
+	ROCOBulletinNoscript: 'test-noscript .ROCOBulletinNoscript',
 	ROCOBulletinNoscriptAddressField: '.ROCOBulletinNoscriptAddressField',
 	ROCOBulletinNoscriptProjectField: '.ROCOBulletinNoscriptProjectField',
 	ROCOBulletinNoscriptSubmitButton: '.ROCOBulletinNoscriptSubmitButton',
@@ -25,6 +31,26 @@ describe('ROCOBulletin_Access', function () {
 
 	it('shows ROCOBulletin2', function () {
 		browser.assert.elements(ROCOBulletin2, 1);
+	});
+
+	it('shows ROCOBulletinScript', function () {
+		browser.assert.elements(ROCOBulletinScript, 1);
+	});
+
+	it('shows ROCOBulletinScriptAddressField', function () {
+		browser.assert.elements(ROCOBulletinScriptAddressField, 1);
+	});
+
+	it('shows ROCOBulletinScriptProjectField', function () {
+		browser.assert.elements(ROCOBulletinScriptProjectField, 1);
+	});
+
+	it('shows ROCOBulletinScriptSubmitButton', function () {
+		browser.assert.elements(ROCOBulletinScriptSubmitButton, 1);
+	});
+
+	it('shows ROCOBulletinScriptFeedback', function () {
+		browser.assert.elements(ROCOBulletinScriptFeedback, 1);
 	});
 
 	it('shows ROCOBulletinNoscript', function () {
