@@ -18,8 +18,8 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			browser.assert.text(ROCOBulletin2, uLocalized('ROCOBulletinSubmitButtonText'));
 		});
 
-		it('localizes ROCOBulletinSubmitButton', function() {
-			browser.assert.attribute(ROCOBulletinSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
+		it('localizes ROCOBulletinNoscriptSubmitButton', function() {
+			browser.assert.attribute(ROCOBulletinNoscriptSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
 		});
 
 	});

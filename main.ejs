@@ -1,27 +1,32 @@
+<div class="ROCOBulletin">
+	
 <p><a class="ROCOBulletin2 OLSKDecorPress OLSKDecorPressCall OLSKDecorInput" href="https://rosano.ca/ephemerata"><%= OLSKLocalized('ROCOBulletinSubmitButtonText') %></a></p>
 
 <style>
 .ROCOBulletin2 {
   padding: 5px !important;
+  
   display: none;
-}
-
-.ROCOBulletin {
-  /*display: none;*/
 }
 </style>
 
-<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
+<noscript>
 
-	<p>
-		<input class="ROCOBulletinAddressField" type="email" name="email" placeholder="you@example.com" />
-	</p>
+<form class="ROCOBulletinNoscript OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
 
-	<input class="ROCOBulletinProjectField" type="hidden" name="tag" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" />
-	<input type="hidden" value="1" name="embed" />
+<p>
+	<input class="ROCOBulletinNoscriptAddressField" type="email" name="email" placeholder="you@example.com" />
+</p>
 
-	<p>
-		<input class="ROCOBulletinSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
-	</p>
-	
+<input class="ROCOBulletinNoscriptProjectField" type="hidden" name="tag" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" />
+<input type="hidden" value="1" name="embed" />
+
+<p>
+	<input class="ROCOBulletinNoscriptSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
+</p>
+
 </form>
+
+</noscript>
+
+</div>

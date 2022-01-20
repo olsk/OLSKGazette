@@ -1,15 +1,14 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 Object.entries({
-	ROCOBulletin2: '.ROCOBulletin2',
-
 	ROCOBulletin: '.ROCOBulletin',
 
-	ROCOBulletinAddressField: '.ROCOBulletinAddressField',
+	ROCOBulletin2: '.ROCOBulletin2',
 
-	ROCOBulletinProjectField: '.ROCOBulletinProjectField',
-
-	ROCOBulletinSubmitButton: '.ROCOBulletinSubmitButton',
+	ROCOBulletinNoscript: '.ROCOBulletinNoscript',
+	ROCOBulletinNoscriptAddressField: '.ROCOBulletinNoscriptAddressField',
+	ROCOBulletinNoscriptProjectField: '.ROCOBulletinNoscriptProjectField',
+	ROCOBulletinNoscriptSubmitButton: '.ROCOBulletinNoscriptSubmitButton',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -20,24 +19,28 @@ describe('ROCOBulletin_Access', function () {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 
-	it('shows ROCOBulletin2', function () {
-		browser.assert.elements(ROCOBulletin2, 1);
-	});
-
 	it('shows ROCOBulletin', function () {
 		browser.assert.elements(ROCOBulletin, 1);
 	});
 
-	it('shows ROCOBulletinAddressField', function () {
-		browser.assert.elements(ROCOBulletinAddressField, 1);
+	it('shows ROCOBulletin2', function () {
+		browser.assert.elements(ROCOBulletin2, 1);
 	});
 
-	it('shows ROCOBulletinProjectField', function () {
-		browser.assert.elements(ROCOBulletinProjectField, 1);
+	it('shows ROCOBulletinNoscript', function () {
+		browser.assert.elements(ROCOBulletinNoscript, 1);
 	});
 
-	it('shows ROCOBulletinSubmitButton', function () {
-		browser.assert.elements(ROCOBulletinSubmitButton, 1);
+	it('shows ROCOBulletinNoscriptAddressField', function () {
+		browser.assert.elements(ROCOBulletinNoscriptAddressField, 1);
+	});
+
+	it('shows ROCOBulletinNoscriptProjectField', function () {
+		browser.assert.elements(ROCOBulletinNoscriptProjectField, 1);
+	});
+
+	it('shows ROCOBulletinNoscriptSubmitButton', function () {
+		browser.assert.elements(ROCOBulletinNoscriptSubmitButton, 1);
 	});
 
 });
