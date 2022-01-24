@@ -44,6 +44,10 @@ describe('ROCOBulletin_Misc', function () {
 
 	describe('ROCOBulletinScriptAddressField', function test_ROCOBulletinScriptAddressField () {
 
+		it('sets name', function () {
+			browser.assert.attribute(ROCOBulletinScriptAddressField, 'name', 'email');
+		});
+
 		it('sets type', function () {
 			browser.assert.attribute(ROCOBulletinScriptAddressField, 'type', 'email');
 		});
@@ -63,6 +67,10 @@ describe('ROCOBulletin_Misc', function () {
 	});
 
 	describe('ROCOBulletinScriptProjectField', function test_ROCOBulletinScriptProjectField () {
+
+		it('sets name', function () {
+			browser.assert.attribute(ROCOBulletinScriptProjectField, 'name', 'labels');
+		});
 
 		it('sets type', function () {
 			browser.assert.attribute(ROCOBulletinScriptProjectField, 'type', 'hidden');
@@ -112,12 +120,12 @@ describe('ROCOBulletin_Misc', function () {
 
 	describe('ROCOBulletinNoscriptAddressField', function test_ROCOBulletinNoscriptAddressField () {
 
-		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinNoscriptAddressField, 'type', 'email');
-		});
-
 		it('sets name', function () {
 			browser.assert.attribute(ROCOBulletinNoscriptAddressField, 'name', 'email');
+		});
+
+		it('sets type', function () {
+			browser.assert.attribute(ROCOBulletinNoscriptAddressField, 'type', 'email');
 		});
 
 		it('sets placeholder', function () {
@@ -128,12 +136,12 @@ describe('ROCOBulletin_Misc', function () {
 
 	describe('ROCOBulletinNoscriptProjectField', function test_ROCOBulletinNoscriptProjectField () {
 
-		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinNoscriptProjectField, 'type', 'hidden');
-		});
-
 		it('sets name', function () {
 			browser.assert.attribute(ROCOBulletinNoscriptProjectField, 'name', 'tag');
+		});
+
+		it('sets type', function () {
+			browser.assert.attribute(ROCOBulletinNoscriptProjectField, 'type', 'hidden');
 		});
 
 		it('sets value', function () {
