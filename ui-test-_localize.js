@@ -14,12 +14,12 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
-		it('localizes ROCOBulletinHybridSubmitButton', function() {
-			browser.assert.attribute(ROCOBulletinHybridSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
+		it('localizes ROCOBulletinSubmitButton', function() {
+			browser.assert.attribute(ROCOBulletinSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
 		});
 
-		it('localizes ROCOBulletinHybridFeedback', function() {
-			browser.assert.text(ROCOBulletinHybridFeedback, uLocalized('ROCOBulletinFeedbackText'));
+		it('localizes ROCOBulletinFeedback', function() {
+			browser.assert.text(ROCOBulletinFeedback, uLocalized('ROCOBulletinFeedbackText'));
 		});
 
 	});

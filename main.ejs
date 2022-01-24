@@ -1,39 +1,36 @@
-<div class="ROCOBulletin">
-	
 <script defer src="https://unpkg.com/@tryghost/portal@1.12.7/umd/portal.min.js" data-ghost="https://list.rosano.ca"></script>
 
-<form class="ROCOBulletinHybrid OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank" data-members-form>
+<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank" data-members-form>
 
 <p>
-	<input class="ROCOBulletinHybridAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
+	<input class="ROCOBulletinAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
 </p>
 
 <!-- ghost -->
-<input class="ROCOBulletinHybridProjectFieldGhost" type="hidden" name="labels" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" data-members-label />
+<input class="ROCOBulletinProjectFieldGhost" type="hidden" name="labels" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" data-members-label />
 
 <!-- buttondown -->
-<input class="ROCOBulletinHybridProjectFieldButtondown" type="hidden" name="tag" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" />
+<input class="ROCOBulletinProjectFieldButtondown" type="hidden" name="tag" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" />
 <input type="hidden" value="1" name="embed" />
 
 <p>
-	<input class="ROCOBulletinHybridSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
-  <strong class="ROCOBulletinHybridFeedback"><%= OLSKLocalized('ROCOBulletinFeedbackText') %></strong>
+	<input class="ROCOBulletinSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
+  <strong class="ROCOBulletinFeedback"><%= OLSKLocalized('ROCOBulletinFeedbackText') %></strong>
 </p>
 
 </form>
 
 <style>
-.ROCOBulletinHybrid .ROCOBulletinHybridFeedback {
+.ROCOBulletin .ROCOBulletinFeedback {
   display: none;
 }
 
-.ROCOBulletinHybrid.success input {
+.ROCOBulletin.success input {
   display: none !important;
 }
 
-.ROCOBulletinHybrid.success .ROCOBulletinHybridFeedback {
+.ROCOBulletin.success .ROCOBulletinFeedback {
   display: unset !important;
 }
 </style>
 
-</div>

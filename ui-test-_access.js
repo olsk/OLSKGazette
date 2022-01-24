@@ -3,13 +3,13 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 Object.entries({
 	ROCOBulletin: '.ROCOBulletin',
 
-	ROCOBulletinHybrid: '.ROCOBulletinHybrid',
-	ROCOBulletinHybridAddressField: '.ROCOBulletinHybridAddressField',
-	ROCOBulletinHybridProjectFieldGhost: '.ROCOBulletinHybridProjectFieldGhost',
-	ROCOBulletinHybridProjectFieldButtondown: '.ROCOBulletinHybridProjectFieldButtondown',
-	ROCOBulletinHybridSubmitButton: '.ROCOBulletinHybridSubmitButton',
+	ROCOBulletin: '.ROCOBulletin',
+	ROCOBulletinAddressField: '.ROCOBulletinAddressField',
+	ROCOBulletinProjectFieldGhost: '.ROCOBulletinProjectFieldGhost',
+	ROCOBulletinProjectFieldButtondown: '.ROCOBulletinProjectFieldButtondown',
+	ROCOBulletinSubmitButton: '.ROCOBulletinSubmitButton',
 
-	ROCOBulletinHybridFeedback: '.ROCOBulletinHybridFeedback',
+	ROCOBulletinFeedback: '.ROCOBulletinFeedback',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -24,28 +24,28 @@ describe('ROCOBulletin_Access', function () {
 		browser.assert.elements(ROCOBulletin, 1);
 	});
 
-	it('shows ROCOBulletinHybrid', function () {
-		browser.assert.elements(ROCOBulletinHybrid, 1);
+	it('shows ROCOBulletin', function () {
+		browser.assert.elements(ROCOBulletin, 1);
 	});
 
-	it('shows ROCOBulletinHybridAddressField', function () {
-		browser.assert.elements(ROCOBulletinHybridAddressField, 1);
+	it('shows ROCOBulletinAddressField', function () {
+		browser.assert.elements(ROCOBulletinAddressField, 1);
 	});
 
-	it('shows ROCOBulletinHybridProjectFieldGhost', function () {
-		browser.assert.elements(ROCOBulletinHybridProjectFieldGhost, 1);
+	it('shows ROCOBulletinProjectFieldGhost', function () {
+		browser.assert.elements(ROCOBulletinProjectFieldGhost, 1);
 	});
 
-	it('shows ROCOBulletinHybridProjectFieldButtondown', function () {
-		browser.assert.elements(ROCOBulletinHybridProjectFieldButtondown, 1);
+	it('shows ROCOBulletinProjectFieldButtondown', function () {
+		browser.assert.elements(ROCOBulletinProjectFieldButtondown, 1);
 	});
 
-	it('shows ROCOBulletinHybridSubmitButton', function () {
-		browser.assert.elements(ROCOBulletinHybridSubmitButton, 1);
+	it('shows ROCOBulletinSubmitButton', function () {
+		browser.assert.elements(ROCOBulletinSubmitButton, 1);
 	});
 
-	it('shows ROCOBulletinHybridFeedback', function () {
-		browser.assert.elements(ROCOBulletinHybridFeedback, 1);
+	it('shows ROCOBulletinFeedback', function () {
+		browser.assert.elements(ROCOBulletinFeedback, 1);
 	});
 
 });

@@ -10,98 +10,98 @@ describe('ROCOBulletin_Misc', function () {
 		});
 	});
 
-	describe('ROCOBulletinHybrid', function test_ROCOBulletinHybrid () {
+	describe('ROCOBulletin', function test_ROCOBulletin () {
 
 		it('classes OLSKDecorBigForm', function () {
-			browser.assert.hasClass(ROCOBulletinHybrid, 'OLSKDecorBigForm');
+			browser.assert.hasClass(ROCOBulletin, 'OLSKDecorBigForm');
 		});
 
 		it('sets method', function () {
-			browser.assert.attribute(ROCOBulletinHybrid, 'method', 'post');
+			browser.assert.attribute(ROCOBulletin, 'method', 'post');
 		});
 
 		it('sets action', function () {
-			browser.assert.attribute(ROCOBulletinHybrid, 'action', 'https://buttondown.email/api/emails/embed-subscribe/rosano');
+			browser.assert.attribute(ROCOBulletin, 'action', 'https://buttondown.email/api/emails/embed-subscribe/rosano');
 		});
 
 		it('sets target', function () {
-			browser.assert.attribute(ROCOBulletinHybrid, 'target', '_blank');
+			browser.assert.attribute(ROCOBulletin, 'target', '_blank');
 		});
 
 		it('sets data-members-form', function () {
-			browser.assert.attribute(ROCOBulletinHybrid, 'data-members-form', '');
+			browser.assert.attribute(ROCOBulletin, 'data-members-form', '');
 		});
 
 	});
 
-	describe('ROCOBulletinHybridAddressField', function test_ROCOBulletinHybridAddressField () {
+	describe('ROCOBulletinAddressField', function test_ROCOBulletinAddressField () {
 
 		it('sets name', function () {
-			browser.assert.attribute(ROCOBulletinHybridAddressField, 'name', 'email');
+			browser.assert.attribute(ROCOBulletinAddressField, 'name', 'email');
 		});
 
 		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinHybridAddressField, 'type', 'email');
+			browser.assert.attribute(ROCOBulletinAddressField, 'type', 'email');
 		});
 
 		it('sets required', function () {
-			browser.assert.attribute(ROCOBulletinHybridAddressField, 'required', 'true');
+			browser.assert.attribute(ROCOBulletinAddressField, 'required', 'true');
 		});
 
 		it('sets placeholder', function () {
-			browser.assert.attribute(ROCOBulletinHybridAddressField, 'placeholder', 'you@example.com');
+			browser.assert.attribute(ROCOBulletinAddressField, 'placeholder', 'you@example.com');
 		});
 
 		it('sets data-members-email', function () {
-			browser.assert.attribute(ROCOBulletinHybridAddressField, 'data-members-email', '');
+			browser.assert.attribute(ROCOBulletinAddressField, 'data-members-email', '');
 		});
 
 	});
 
-	describe('ROCOBulletinHybridProjectFieldGhost', function test_ROCOBulletinHybridProjectFieldGhost () {
+	describe('ROCOBulletinProjectFieldGhost', function test_ROCOBulletinProjectFieldGhost () {
 
 		it('sets name', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldGhost, 'name', 'labels');
+			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'name', 'labels');
 		});
 
 		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldGhost, 'type', 'hidden');
+			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'type', 'hidden');
 		});
 
 		it('sets data-members-label', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldGhost, 'data-members-label', '');
+			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'data-members-label', '');
 		});
 
 		it('sets value', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldGhost, 'value', ROCOBulletinProject || 'RP_X');
+			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'value', ROCOBulletinProject || 'RP_X');
 		});
 		
 	});
 
-	describe('ROCOBulletinHybridProjectFieldButtondown', function test_ROCOBulletinHybridProjectFieldButtondown () {
+	describe('ROCOBulletinProjectFieldButtondown', function test_ROCOBulletinProjectFieldButtondown () {
 
 		it('sets name', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldButtondown, 'name', 'tag');
+			browser.assert.attribute(ROCOBulletinProjectFieldButtondown, 'name', 'tag');
 		});
 
 		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldButtondown, 'type', 'hidden');
+			browser.assert.attribute(ROCOBulletinProjectFieldButtondown, 'type', 'hidden');
 		});
 
 		it('sets value', function () {
-			browser.assert.attribute(ROCOBulletinHybridProjectFieldButtondown, 'value', ROCOBulletinProject || 'RP_X');
+			browser.assert.attribute(ROCOBulletinProjectFieldButtondown, 'value', ROCOBulletinProject || 'RP_X');
 		});
 		
 	});
 
-	describe('ROCOBulletinHybridSubmitButton', function test_ROCOBulletinHybridSubmitButton () {
+	describe('ROCOBulletinSubmitButton', function test_ROCOBulletinSubmitButton () {
 
 		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinHybridSubmitButton, 'type', 'submit');
+			browser.assert.attribute(ROCOBulletinSubmitButton, 'type', 'submit');
 		});
 
 		it('classes OLSKDecorPressCall', function () {
-			browser.assert.hasClass(ROCOBulletinHybridSubmitButton, 'OLSKDecorPressCall');
+			browser.assert.hasClass(ROCOBulletinSubmitButton, 'OLSKDecorPressCall');
 		});
 
 	});
