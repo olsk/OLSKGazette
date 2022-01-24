@@ -12,52 +12,38 @@
 
 <script defer src="https://unpkg.com/@tryghost/portal@1.12.7/umd/portal.min.js" data-ghost="https://list.rosano.ca"></script>
 
-<form class="ROCOBulletinScript OLSKDecorBigForm" data-members-form>
+<form class="ROCOBulletinHybrid OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank" data-members-form>
 
 <p>
-	<input class="ROCOBulletinScriptAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
+	<input class="ROCOBulletinHybridAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
 </p>
 
-<input class="ROCOBulletinScriptProjectField" type="hidden" name="labels" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" data-members-label />
+<!-- ghost -->
+<input class="ROCOBulletinHybridProjectFieldGhost" type="hidden" name="labels" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" data-members-label />
+
+<!-- buttondown -->
+<input class="ROCOBulletinHybridProjectFieldButtondown" type="hidden" name="tag" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" />
+<input type="hidden" value="1" name="embed" />
 
 <p>
-	<input class="ROCOBulletinScriptSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
-  <strong class="ROCOBulletinScriptFeedback"><%= OLSKLocalized('ROCOBulletinFeedbackText') %></strong>
+	<input class="ROCOBulletinHybridSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
+  <strong class="ROCOBulletinHybridFeedback"><%= OLSKLocalized('ROCOBulletinFeedbackText') %></strong>
 </p>
 
 </form>
 
 <style>
-.ROCOBulletinScript .ROCOBulletinScriptFeedback {
+.ROCOBulletinHybrid .ROCOBulletinHybridFeedback {
   display: none;
 }
 
-.ROCOBulletinScript.success input {
+.ROCOBulletinHybrid.success input {
   display: none !important;
 }
 
-.ROCOBulletinScript.success .ROCOBulletinScriptFeedback {
+.ROCOBulletinHybrid.success .ROCOBulletinHybridFeedback {
   display: unset !important;
 }
 </style>
-
-<noscript>
-
-<form class="ROCOBulletinNoscript OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
-
-<p>
-	<input class="ROCOBulletinNoscriptAddressField" type="email" name="email" placeholder="you@example.com" />
-</p>
-
-<input class="ROCOBulletinNoscriptProjectField" type="hidden" name="tag" value="<%= locals.ROCOBulletinProject || 'RP_X' %>" />
-<input type="hidden" value="1" name="embed" />
-
-<p>
-	<input class="ROCOBulletinNoscriptSubmitButton OLSKDecorPressCall" type="submit" value="<%= OLSKLocalized('ROCOBulletinSubmitButtonText') %>" />
-</p>
-
-</form>
-
-</noscript>
 
 </div>

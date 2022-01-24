@@ -5,16 +5,13 @@ Object.entries({
 
 	ROCOBulletin2: '.ROCOBulletin2',
 
-	ROCOBulletinScript: '.ROCOBulletinScript',
-	ROCOBulletinScriptAddressField: '.ROCOBulletinScriptAddressField',
-	ROCOBulletinScriptProjectField: '.ROCOBulletinScriptProjectField',
-	ROCOBulletinScriptSubmitButton: '.ROCOBulletinScriptSubmitButton',
-	ROCOBulletinScriptFeedback: '.ROCOBulletinScriptFeedback',
+	ROCOBulletinHybrid: '.ROCOBulletinHybrid',
+	ROCOBulletinHybridAddressField: '.ROCOBulletinHybridAddressField',
+	ROCOBulletinHybridProjectFieldGhost: '.ROCOBulletinHybridProjectFieldGhost',
+	ROCOBulletinHybridProjectFieldButtondown: '.ROCOBulletinHybridProjectFieldButtondown',
+	ROCOBulletinHybridSubmitButton: '.ROCOBulletinHybridSubmitButton',
 
-	ROCOBulletinNoscript: 'test-noscript .ROCOBulletinNoscript',
-	ROCOBulletinNoscriptAddressField: '.ROCOBulletinNoscriptAddressField',
-	ROCOBulletinNoscriptProjectField: '.ROCOBulletinNoscriptProjectField',
-	ROCOBulletinNoscriptSubmitButton: '.ROCOBulletinNoscriptSubmitButton',
+	ROCOBulletinHybridFeedback: '.ROCOBulletinHybridFeedback',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -33,40 +30,28 @@ describe('ROCOBulletin_Access', function () {
 		browser.assert.elements(ROCOBulletin2, 1);
 	});
 
-	it('shows ROCOBulletinScript', function () {
-		browser.assert.elements(ROCOBulletinScript, 1);
+	it('shows ROCOBulletinHybrid', function () {
+		browser.assert.elements(ROCOBulletinHybrid, 1);
 	});
 
-	it('shows ROCOBulletinScriptAddressField', function () {
-		browser.assert.elements(ROCOBulletinScriptAddressField, 1);
+	it('shows ROCOBulletinHybridAddressField', function () {
+		browser.assert.elements(ROCOBulletinHybridAddressField, 1);
 	});
 
-	it('shows ROCOBulletinScriptProjectField', function () {
-		browser.assert.elements(ROCOBulletinScriptProjectField, 1);
+	it('shows ROCOBulletinHybridProjectFieldGhost', function () {
+		browser.assert.elements(ROCOBulletinHybridProjectFieldGhost, 1);
 	});
 
-	it('shows ROCOBulletinScriptSubmitButton', function () {
-		browser.assert.elements(ROCOBulletinScriptSubmitButton, 1);
+	it('shows ROCOBulletinHybridProjectFieldButtondown', function () {
+		browser.assert.elements(ROCOBulletinHybridProjectFieldButtondown, 1);
 	});
 
-	it('shows ROCOBulletinScriptFeedback', function () {
-		browser.assert.elements(ROCOBulletinScriptFeedback, 1);
+	it('shows ROCOBulletinHybridSubmitButton', function () {
+		browser.assert.elements(ROCOBulletinHybridSubmitButton, 1);
 	});
 
-	it('shows ROCOBulletinNoscript', function () {
-		browser.assert.elements(ROCOBulletinNoscript, 1);
-	});
-
-	it('shows ROCOBulletinNoscriptAddressField', function () {
-		browser.assert.elements(ROCOBulletinNoscriptAddressField, 1);
-	});
-
-	it('shows ROCOBulletinNoscriptProjectField', function () {
-		browser.assert.elements(ROCOBulletinNoscriptProjectField, 1);
-	});
-
-	it('shows ROCOBulletinNoscriptSubmitButton', function () {
-		browser.assert.elements(ROCOBulletinNoscriptSubmitButton, 1);
+	it('shows ROCOBulletinHybridFeedback', function () {
+		browser.assert.elements(ROCOBulletinHybridFeedback, 1);
 	});
 
 });
