@@ -3,8 +3,6 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 Object.entries({
 	ROCOBulletin: '.ROCOBulletin',
 
-	ROCOBulletin2: '.ROCOBulletin2',
-
 	ROCOBulletinHybrid: '.ROCOBulletinHybrid',
 	ROCOBulletinHybridAddressField: '.ROCOBulletinHybridAddressField',
 	ROCOBulletinHybridProjectFieldGhost: '.ROCOBulletinHybridProjectFieldGhost',
@@ -24,10 +22,6 @@ describe('ROCOBulletin_Access', function () {
 
 	it('shows ROCOBulletin', function () {
 		browser.assert.elements(ROCOBulletin, 1);
-	});
-
-	it('shows ROCOBulletin2', function () {
-		browser.assert.elements(ROCOBulletin2, 1);
 	});
 
 	it('shows ROCOBulletinHybrid', function () {

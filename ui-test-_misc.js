@@ -10,26 +10,6 @@ describe('ROCOBulletin_Misc', function () {
 		});
 	});
 
-	describe('ROCOBulletin2', function test_ROCOBulletin2 () {
-
-		it('classes OLSKDecorPress', function () {
-			browser.assert.hasClass(ROCOBulletin2, 'OLSKDecorPress');
-		});
-
-		it('classes OLSKDecorPressCall', function () {
-			browser.assert.hasClass(ROCOBulletin2, 'OLSKDecorPressCall');
-		});
-
-		it('classes OLSKDecorInput', function () {
-			browser.assert.hasClass(ROCOBulletin2, 'OLSKDecorInput');
-		});
-
-		it('sets href', function () {
-			browser.assert.attribute(ROCOBulletin2, 'href', 'https://rosano.ca/ephemerata');
-		});
-		
-	});
-
 	describe('ROCOBulletinHybrid', function test_ROCOBulletinHybrid () {
 
 		it('classes OLSKDecorBigForm', function () {
