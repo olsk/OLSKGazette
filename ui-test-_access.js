@@ -5,7 +5,7 @@ Object.entries({
 
 	ROCOBulletin: '.ROCOBulletin',
 	ROCOBulletinAddressField: '.ROCOBulletinAddressField',
-	ROCOBulletinProjectFieldGhost: '.ROCOBulletinProjectFieldGhost',
+	ROCOBulletinProjectField: '.ROCOBulletinProjectField',
 	ROCOBulletinProjectFieldButtondown: '.ROCOBulletinProjectFieldButtondown',
 	ROCOBulletinSubmitButton: '.ROCOBulletinSubmitButton',
 
@@ -32,8 +32,8 @@ describe('ROCOBulletin_Access', function () {
 		browser.assert.elements(ROCOBulletinAddressField, 1);
 	});
 
-	it('shows ROCOBulletinProjectFieldGhost', function () {
-		browser.assert.elements(ROCOBulletinProjectFieldGhost, 1);
+	it('shows ROCOBulletinProjectField', function () {
+		browser.assert.elements(ROCOBulletinProjectField, 1);
 	});
 
 	it('shows ROCOBulletinProjectFieldButtondown', function () {

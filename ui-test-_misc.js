@@ -58,22 +58,22 @@ describe('ROCOBulletin_Misc', function () {
 
 	});
 
-	describe('ROCOBulletinProjectFieldGhost', function test_ROCOBulletinProjectFieldGhost () {
+	describe('ROCOBulletinProjectField', function test_ROCOBulletinProjectField () {
 
 		it('sets name', function () {
-			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'name', 'labels');
+			browser.assert.attribute(ROCOBulletinProjectField, 'name', 'labels');
 		});
 
 		it('sets type', function () {
-			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'type', 'hidden');
+			browser.assert.attribute(ROCOBulletinProjectField, 'type', 'hidden');
 		});
 
 		it('sets data-members-label', function () {
-			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'data-members-label', '');
+			browser.assert.attribute(ROCOBulletinProjectField, 'data-members-label', '');
 		});
 
 		it('sets value', function () {
-			browser.assert.attribute(ROCOBulletinProjectFieldGhost, 'value', ROCOBulletinProject || 'RP_X');
+			browser.assert.attribute(ROCOBulletinProjectField, 'value', ROCOBulletinProject || 'RP_X');
 		});
 		
 	});
