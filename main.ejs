@@ -20,6 +20,12 @@
 	<strong class="ROCOBulletinFeedback"><%= OLSKLocalized('ROCOBulletinFeedbackText') %></strong>
 </p>
 
+<% if (!OLSK_SPEC_UI()) { -%>
+<script type="text/javascript">
+document.querySelector('.ROCOBulletin').removeAttribute('action');
+</script>
+<% } -%>
+
 </form>
 
 <style>
