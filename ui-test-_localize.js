@@ -15,11 +15,11 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 
 		it('localizes ROCOBulletinSubmitButton', function() {
-			browser.assert.attribute(ROCOBulletinSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
+			return browser.assert.attribute(ROCOBulletinSubmitButton, 'value', uLocalized('ROCOBulletinSubmitButtonText'));
 		});
 
 		it('localizes ROCOBulletinFeedback', function() {
-			browser.assert.text(ROCOBulletinFeedback, uLocalized('ROCOBulletinFeedbackText'));
+			return browser.assert.text(ROCOBulletinFeedback, uLocalized('ROCOBulletinFeedbackText'));
 		});
 
 	});

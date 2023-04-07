@@ -21,31 +21,31 @@ describe('ROCOBulletin_Access', function () {
 	});
 
 	it('shows ROCOBulletin', function () {
-		browser.assert.elements(ROCOBulletin, 1);
+		return browser.assert.elements(ROCOBulletin, 1);
 	});
 
 	it('shows ROCOBulletin', function () {
-		browser.assert.elements(ROCOBulletin, 1);
+		return browser.assert.elements(ROCOBulletin, 1);
 	});
 
 	it('shows ROCOBulletinAddressField', function () {
-		browser.assert.elements(ROCOBulletinAddressField, 1);
+		return browser.assert.elements(ROCOBulletinAddressField, 1);
 	});
 
 	it('shows ROCOBulletinProjectField', function () {
-		browser.assert.elements(ROCOBulletinProjectField, 1);
+		return browser.assert.elements(ROCOBulletinProjectField, 1);
 	});
 
 	it('shows ROCOBulletinProjectFieldButtondown', function () {
-		browser.assert.elements(ROCOBulletinProjectFieldButtondown, 1);
+		return browser.assert.elements(ROCOBulletinProjectFieldButtondown, 1);
 	});
 
 	it('shows ROCOBulletinSubmitButton', function () {
-		browser.assert.elements(ROCOBulletinSubmitButton, 1);
+		return browser.assert.elements(ROCOBulletinSubmitButton, 1);
 	});
 
 	it('shows ROCOBulletinFeedback', function () {
-		browser.assert.elements(ROCOBulletinFeedback, 1);
+		return browser.assert.elements(ROCOBulletinFeedback, 1);
 	});
 
 });
